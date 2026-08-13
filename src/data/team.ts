@@ -10,7 +10,7 @@ export const team: TeamMember[] = [
   { name: "Dr. Waheed Aftab Khan", role: "CEO", group: "Leadership" },
   { name: "Rizwan Javeed", role: "CTO", group: "Leadership" },
   { name: "Noor Ul Amin", role: "Sr. AI Team Lead", group: "AI" },
-  { name: "Muzammil Saleem", role: "AI Developer", group: "AI" },
+  { name: "Sonia Saleem", role: "AI Developer", group: "AI" },
   { name: "Azan Shakir", role: "Sr. AI Engineer", group: "AI" },
   { name: "Shan Ali", role: "Sr. AI Engineer", group: "AI" },
   { name: "Fizza Akram", role: "Business Development Head", group: "Leadership" },
