@@ -19,16 +19,16 @@ export const site = {
         "https://www.openstreetmap.org/export/embed.html?bbox=-2.280%2C53.460%2C-2.200%2C53.500&layer=mapnik",
     },
     {
-      city: "United Arab Emirates",
-      desc: "Middle East",
+      city: "Dubai, UAE",
+      desc: "404-F 5, Frij Al Marrar Building, Al Mararr, Dubai, United Arab Emirates",
       mapSrc:
-        "https://www.openstreetmap.org/export/embed.html?bbox=55.250%2C25.185%2C55.320%2C25.235&layer=mapnik",
+        "https://www.openstreetmap.org/export/embed.html?bbox=55.298%2C25.270%2C55.312%2C25.282&layer=mapnik",
     },
     {
-      city: "Virginia, USA",
-      desc: "United States",
+      city: "Centreville, VA, USA",
+      desc: "14205 Heritage Crossing Ln, Centreville, VA 20120",
       mapSrc:
-        "https://www.openstreetmap.org/export/embed.html?bbox=-77.250%2C38.850%2C-77.050%2C38.950&layer=mapnik",
+        "https://www.openstreetmap.org/export/embed.html?bbox=-77.445%2C38.835%2C-77.420%2C38.852&layer=mapnik",
     },
     {
       city: "Syed Muratab Ali Road, Gulberg",

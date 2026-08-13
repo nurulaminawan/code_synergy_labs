@@ -140,7 +140,7 @@ export function Layout({ children, onHomeSection }: LayoutProps) {
               Software development studio for AI systems, ERP platforms, and production-grade products.
             </p>
             <address className="not-italic text-xs text-muted-foreground/70">
-              Lahore · Manchester · UAE · Virginia ·{" "}
+              Lahore · Manchester · Dubai · Virginia ·{" "}
               <a href={`mailto:${site.email}`} className="hover:text-primary">
                 {site.email}
               </a>

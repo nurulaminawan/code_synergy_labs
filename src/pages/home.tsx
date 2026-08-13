@@ -673,7 +673,7 @@ export default function Home() {
                 },
                 {
                   q: "Where are you located?",
-                  a: "Manchester (UK), the UAE, Virginia (USA), Syed Muratab Ali Road near Zahoor Elahi, Gulberg, Lahore, and Jehangir Road, Canal Bank, Lahore.",
+                  a: "Manchester (UK); 404-F 5, Frij Al Marrar Building, Al Mararr, Dubai, UAE; 14205 Heritage Crossing Ln, Centreville, VA 20120, USA; Syed Muratab Ali Road near Zahoor Elahi, Gulberg, Lahore; and Jehangir Road, Canal Bank, Lahore.",
                 },
                 {
                   q: "How do we start?",
