@@ -1,0 +1,17 @@
+{
+  "name": "Code Synergy Labs",
+  "short_name": "CS Labs",
+  "description": "AI, ERP, and custom software development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1014",
+  "theme_color": "#00d4c8",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

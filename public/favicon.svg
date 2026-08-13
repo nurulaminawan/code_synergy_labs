@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Code Synergy Labs">
+  <rect width="64" height="64" rx="14" fill="#061016"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#00d4c8" stroke-width="2"/>
+  <path d="M18 22 L10 32 L18 42" fill="none" stroke="#00d4c8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 22 L54 32 L46 42" fill="none" stroke="#e8fffb" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="5" fill="#00d4c8"/>
+</svg>

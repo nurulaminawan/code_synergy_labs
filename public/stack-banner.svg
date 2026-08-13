@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 400" preserveAspectRatio="xMidYMid slice">
+  <rect width="1920" height="400" fill="#061016"/>
+  <g fill="none" stroke="#00d4c8" stroke-opacity="0.25">
+    <path d="M0 280 C 300 80, 600 360, 960 200 S 1500 40, 1920 220" stroke-width="2"/>
+    <path d="M0 320 C 400 120, 800 340, 1200 180 S 1600 300, 1920 140" stroke-width="1.4"/>
+  </g>
+</svg>
