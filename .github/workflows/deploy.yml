@@ -33,7 +33,7 @@ jobs:
 
       - name: Build site
         env:
-          BASE_PATH: "/code_synergy_labs/"
+          BASE_PATH: "/"
           NODE_ENV: production
           VITE_WEB3FORMS_KEY: ${{ secrets.VITE_WEB3FORMS_KEY }}
         run: npm run build
