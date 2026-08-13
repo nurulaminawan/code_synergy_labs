@@ -17,19 +17,19 @@ export const projects: Project[] = [
     category: "AI",
     summary: "AI meeting intelligence that captures, structures, and turns conversations into action.",
     description:
-      "Meeting Sense transcribes live discussions, extracts decisions and owners, and writes structured notes into a searchable knowledge graph. Teams get follow-ups, risk flags, and a living memory of every meeting.",
-    stack: ["Python", "FastAPI", "Neo4j", "Ingestion Layer", "React"],
-    outcomes: ["Automatic action items", "Searchable meeting memory", "Multi-speaker insights"],
+      "Meeting Sense transcribes live discussions, extracts decisions and owners, and writes structured notes into a searchable knowledge graph. LangChain RAG over Neo4j and Qdrant retrieves the right LLM context so teams get follow-ups, risk flags, and a living memory of every meeting.",
+    stack: ["Python", "FastAPI", "LLM", "LangChain", "RAG", "Qdrant", "Neo4j", "React"],
+    outcomes: ["Automatic action items", "Graph RAG retrieval", "Searchable meeting memory"],
   },
   {
-    id: "voice-agents",
-    title: "Voice Agents for Customer Support",
+    id: "voice-support",
+    title: "AI Voice Customer Support Solution",
     category: "AI",
-    summary: "Multilingual voice agents that handle support calls with human-level fluency.",
+    summary: "Multilingual AI voice agents that handle customer support calls with human-level fluency.",
     description:
-      "Production voice agents for customer support across languages. They authenticate callers, resolve common tickets, escalate with full context, and log every turn into CRM and analytics.",
-    stack: ["Python", "FastAPI", "Speech AI", "PostgreSQL", "Auth"],
-    outcomes: ["24/7 multilingual coverage", "Lower handle time", "Consistent brand voice"],
+      "An AI voice customer support solution for production call flows. Agentic LLM workflows authenticate callers, resolve common tickets, escalate with full context, and log every turn into CRM and analytics — across languages, with LangChain RAG over Qdrant and Neo4j for grounded answers from your knowledge base.",
+    stack: ["Python", "FastAPI", "LLM", "LangChain", "Agentic AI", "RAG", "Qdrant", "Neo4j", "Speech AI", "Auth"],
+    outcomes: ["24/7 multilingual coverage", "Grounded answers with RAG", "Lower handle time"],
   },
   {
     id: "hr-insights",
@@ -37,9 +37,9 @@ export const projects: Project[] = [
     category: "AI",
     summary: "An agentic HR copilot that surfaces workforce patterns and recommended actions.",
     description:
-      "Agentic workflows that read HR systems, detect attrition risk, staffing gaps, and policy exceptions, then propose next steps to people teams — with audit trails and role-based access.",
-    stack: ["Python", "Neo4j", "Machine Learning", "Django", "PostgreSQL"],
-    outcomes: ["Attrition early-warning", "Policy-aware recommendations", "Secure HR data access"],
+      "Agentic LLM workflows that read HR systems, detect attrition risk, staffing gaps, and policy exceptions, then propose next steps to people teams. LangChain RAG over Neo4j and Qdrant keeps recommendations tied to policies and org structure, with audit trails and role-based access.",
+    stack: ["Python", "Agentic AI", "LLM", "LangChain", "RAG", "Qdrant", "Neo4j", "Django", "PostgreSQL"],
+    outcomes: ["Attrition early-warning", "Policy-aware RAG answers", "Secure HR data access"],
   },
   {
     id: "education-erp",
@@ -50,6 +50,16 @@ export const projects: Project[] = [
       "A full education ERP covering student lifecycle, timetable, examinations, fees, payroll, and reporting. Built for schools and universities that need reliable data and role-based portals.",
     stack: ["Laravel", "PHP", "MySQL", "React", "Auth"],
     outcomes: ["Unified student records", "Fee and payroll automation", "Parent and faculty portals"],
+  },
+  {
+    id: "school-erp-flutter",
+    title: "Flutter School ERP",
+    category: "Mobile",
+    summary: "School ERP mobile apps for Student, Parent, Admin, and Teacher — built with Flutter.",
+    description:
+      "A Flutter school ERP with dedicated apps and roles for students, parents, admins, and teachers. Attendance, homework, results, fees, circulars, and messaging stay in sync with the campus backend so each role sees only what they need.",
+    stack: ["Flutter", "Dart", "Auth", "REST APIs", "Firebase"],
+    outcomes: ["Student app", "Parent app", "Admin app", "Teacher app"],
   },
   {
     id: "industrial-erp",
@@ -72,6 +82,16 @@ export const projects: Project[] = [
     outcomes: ["Posted vs unposted control", "Linked HR and accounts", "Invoice and returns"],
   },
   {
+    id: "floor-plan-creator",
+    title: "Floor Plan Creator",
+    category: "Mobile",
+    summary: "House design and architecture app for creating floor plans in minutes.",
+    description:
+      "Floor Plan Creator helps homeowners, architects, and interior teams draw custom house layouts. Drag-and-drop rooms, set wall dimensions, and iterate floor plans for residential design and architecture work.",
+    stack: ["Flutter", "Android", "iOS"],
+    outcomes: ["Drag-and-drop rooms", "Accurate wall dimensions", "Residential architecture layouts"],
+  },
+  {
     id: "appoptimax",
     title: "AppOptimax",
     category: "Web",
@@ -80,15 +100,5 @@ export const projects: Project[] = [
       "AppOptimax helps product teams lift app-store visibility with keyword difficulty, competitor rank tracking, and growth dashboards used by marketing and product together.",
     stack: ["React", "Python", "PostgreSQL", "FastAPI"],
     outcomes: ["Keyword intelligence", "Competitor rank watch", "Growth reporting"],
-  },
-  {
-    id: "smart-mirror",
-    title: "Smart Mirror & Recorder",
-    category: "Mobile",
-    summary: "Screen mirroring and HD recording for tutorials, gaming, and presentations.",
-    description:
-      "A mobile product for mirroring to TV or PC while recording in HD, with a private browser and multitasking so creators can capture without interrupting their workflow.",
-    stack: ["Flutter", "Android", "iOS"],
-    outcomes: ["HD capture", "Multitasking record", "Cast to display"],
   },
 ];

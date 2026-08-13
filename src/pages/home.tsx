@@ -167,8 +167,8 @@ export default function Home() {
                 className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
               >
                 Code Synergy Labs is a software development studio for AI systems, knowledge graphs,
-                ERP platforms, and custom products — from Neo4j ingestion layers to multilingual
-                voice agents and production web and mobile apps.
+                ERP platforms, and custom products — from agentic AI, LLMs, LangChain, RAG, Qdrant, and Neo4j
+                to multilingual voice agents and production web and mobile apps.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -244,8 +244,8 @@ export default function Home() {
                   ERP systems, and full-stack applications used in production every day.
                 </motion.p>
                 <motion.p variants={fadeUp} className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                  From Meeting Sense and multilingual voice agents to Education and Industrial ERP,
-                  we combine machine learning, Neo4j, and classic engineering — React, Flutter,
+                  From Meeting Sense and our AI Voice Customer Support Solution to Education and Industrial ERP,
+                  we combine agentic AI, LLMs, LangChain, RAG, Qdrant, Neo4j, and classic engineering — React, Flutter,
                   FastAPI, Django, Laravel, PostgreSQL — so the architecture matches the problem.
                 </motion.p>
                 <motion.div variants={fadeUp}>
@@ -255,6 +255,11 @@ export default function Home() {
                       <p className="text-sm text-muted-foreground">Founder &amp; CEO · Code Synergy Labs</p>
                     </div>
                   </div>
+                </motion.div>
+                <motion.div variants={fadeUp} className="mt-8">
+                  <Link href="/team" className="text-primary font-bold hover:underline">
+                    Meet the team →
+                  </Link>
                 </motion.div>
               </motion.div>
               <motion.div
@@ -308,17 +313,17 @@ export default function Home() {
                 {
                   icon: <Brain className="w-8 h-8" />,
                   title: "AI Development",
-                  desc: "Machine learning, agentic workflows, and production AI — from prototypes to systems that stay up.",
+                  desc: "Agentic AI, LLMs, RAG, LangChain, Qdrant, and machine learning — from prototypes to production systems.",
                 },
                 {
                   icon: <Network className="w-8 h-8" />,
-                  title: "Neo4j & Ingestion Layers",
-                  desc: "Advanced graph ingestion, entity resolution, and knowledge layers on Neo4j Aura for connected data.",
+                  title: "Neo4j, RAG & Vector Search",
+                  desc: "Graph RAG on Neo4j Aura plus Qdrant vector search, LangChain pipelines, and ingestion layers for grounded LLM answers.",
                 },
                 {
                   icon: <Bot className="w-8 h-8" />,
                   title: "Voice & Agentic AI",
-                  desc: "Multilingual customer-support voice agents and HR insight agents that act with audit trails.",
+                  desc: "Agentic workflows, LLM agents, and our AI Voice Customer Support Solution with RAG-backed answers.",
                 },
                 {
                   icon: <Workflow className="w-8 h-8" />,
@@ -328,12 +333,12 @@ export default function Home() {
                 {
                   icon: <Smartphone className="w-8 h-8" />,
                   title: "Web & Mobile Apps",
-                  desc: "React, Flutter, and cross-platform products with Auth, APIs, and store-ready delivery.",
+                  desc: "React and Flutter products — including School ERP for Student, Parent, Admin, and Teacher.",
                 },
                 {
                   icon: <Database className="w-8 h-8" />,
-                  title: "Backend & Data",
-                  desc: "PostgreSQL, MySQL, SQL, FastAPI, Django, Laravel, PHP, and secure authentication layers.",
+                  title: "Backend & Cloud",
+                  desc: "PostgreSQL, MySQL, FastAPI, Django, Laravel, PHP, Auth — deployed on AWS, Azure, Google Cloud, and Docker.",
                 },
               ].map((service, i) => (
                 <motion.div
@@ -377,10 +382,11 @@ export default function Home() {
                 </motion.h2>
                 <div className="space-y-6">
                   {[
+                    "Agentic AI and LLM applications",
+                    "RAG with LangChain, Qdrant, and Neo4j",
                     "Neo4j knowledge graphs on Aura",
                     "Advanced ingestion and entity resolution layers",
                     "Machine learning models in production pipelines",
-                    "Agentic AI for operations, HR, and support",
                     "Secure Auth across web, mobile, and APIs",
                   ].map((point) => (
                     <motion.div key={point} variants={fadeUp} className="flex items-start gap-4">
@@ -393,7 +399,7 @@ export default function Home() {
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   { icon: <Sparkles />, title: "Meeting Sense", desc: "Turn conversations into structured, searchable action." },
-                  { icon: <Bot />, title: "Voice Agents", desc: "Multilingual support that authenticates and resolves." },
+                  { icon: <Bot />, title: "AI Voice Support", desc: "Multilingual customer support that authenticates and resolves." },
                   { icon: <Layers />, title: "HR Insights", desc: "Agentic workforce intelligence with audit trails." },
                   { icon: <Factory />, title: "Industrial ERP", desc: "Production, inventory, and procurement in sync." },
                 ].map((item, i) => (
@@ -438,7 +444,7 @@ export default function Home() {
               </Link>
             </motion.div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.slice(0, 6).map((project, i) => (
+              {projects.slice(0, 8).map((project, i) => (
                 <motion.div
                   key={project.id}
                   initial={{ opacity: 0, y: 24 }}
@@ -582,11 +588,11 @@ export default function Home() {
             </motion.div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: "AI & Data", items: ["Neo4j", "Aura", "Machine Learning", "Ingestion Layers", "Python"] },
+                { title: "AI & Data", items: ["Agentic AI", "LLM", "LangChain", "RAG", "Qdrant", "Neo4j", "Aura", "Machine Learning", "Ingestion Layers", "Python"] },
                 { title: "Backend", items: ["FastAPI", "Django", "Laravel", "PHP", "Auth"] },
                 { title: "Databases", items: ["PostgreSQL", "MySQL", "SQL", "MongoDB"] },
                 { title: "Frontend", items: ["React", "Flutter", "TypeScript", "HTML"] },
-                { title: "Cloud", items: ["AWS", "Docker", "Azure", "Google Cloud"] },
+                { title: "Cloud & DevOps", items: ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes", "CI/CD", "Linux"] },
                 { title: "Mobile", items: ["Flutter", "React Native", "Kotlin", "Swift"] },
               ].map((group) => (
                 <div key={group.title} className="border border-border rounded-xl p-6 bg-background">
@@ -655,19 +661,19 @@ export default function Home() {
               {[
                 {
                   q: "What does Code Synergy Labs specialise in?",
-                  a: "AI development (Neo4j knowledge graphs, ingestion layers, machine learning, voice and agentic systems), ERP platforms including Education and Industrial ERP, and custom web and mobile software.",
+                  a: "AI development including agentic systems, LLMs, LangChain, RAG, Qdrant, Neo4j knowledge graphs, ingestion layers, machine learning, and voice agents — plus ERP platforms (Education, Industrial, Flutter School ERP) and custom web and mobile software.",
                 },
                 {
                   q: "Which technologies do you use?",
-                  a: "Backend: FastAPI, Django, Laravel, PHP, Auth, PostgreSQL, MySQL, SQL, Neo4j Aura. Frontend and mobile: React, Flutter, and related stacks. We pick the stack that fits the product, not a single template.",
+                  a: "AI: Agentic AI, LLMs, LangChain, RAG, Qdrant, Neo4j Aura. Backend: FastAPI, Django, Laravel, PHP, Auth, PostgreSQL, MySQL, SQL. Cloud: AWS, Azure, Google Cloud, Docker, Kubernetes. Frontend and mobile: React, Flutter. We pick the stack that fits the product, not a single template.",
                 },
                 {
                   q: "Can you take over an existing product?",
                   a: "Yes. We audit architecture, data, and Auth, then improve or rebuild modules without freezing the business.",
                 },
                 {
-                  q: "Do you work with clients outside Pakistan?",
-                  a: "Yes. We deliver remotely for teams internationally, with a primary studio in Lahore.",
+                  q: "Where are you located?",
+                  a: "Manchester (UK), the UAE, Virginia (USA), Syed Muratab Ali Road near Zahoor Elahi, Gulberg, Lahore, and Jehangir Road, Canal Bank, Lahore.",
                 },
                 {
                   q: "How do we start?",
@@ -704,7 +710,7 @@ export default function Home() {
 
         <section id="contact" className="py-24 bg-card">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid lg:grid-cols-2 gap-16">
+            <div className="grid lg:grid-cols-2 gap-16 mb-20">
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
                 <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black mb-8">
                   Get in Touch
@@ -740,17 +746,10 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full text-primary mt-1">
-                      <MapPin className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-2">Studio</h4>
-                      <p className="text-muted-foreground">{site.city}</p>
-                    </div>
-                  </div>
                 </motion.div>
+              </motion.div>
 
+              <div>
                 {formState === "success" ? (
                   <div className="bg-primary/10 border border-primary/30 rounded-2xl p-8 text-center">
                     <h3 className="text-xl font-black mb-2">Message sent</h3>
@@ -762,7 +761,7 @@ export default function Home() {
                     </button>
                   </div>
                 ) : (
-                  <motion.form ref={formRef} variants={fadeUp} className="space-y-4" onSubmit={handleContactSubmit}>
+                  <form ref={formRef} className="space-y-4" onSubmit={handleContactSubmit}>
                     <Input name="name" placeholder="Your Full Name" required className="bg-background border-border h-12" />
                     <Input name="email" placeholder="Email Address" type="email" required className="bg-background border-border h-12" />
                     <Input name="subject" placeholder="Subject (e.g. AI platform, ERP, mobile app)" className="bg-background border-border h-12" />
@@ -784,18 +783,42 @@ export default function Home() {
                     >
                       {formState === "loading" ? "Sending…" : "Send Message →"}
                     </Button>
-                  </motion.form>
+                  </form>
                 )}
-              </motion.div>
+              </div>
+            </div>
 
-              <div className="h-full min-h-[400px] rounded-xl overflow-hidden border border-border">
-                <iframe
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=74.25%2C31.45%2C74.42%2C31.58&layer=mapnik"
-                  className="w-full h-full min-h-[400px] border-0 grayscale hover:grayscale-0 transition-all duration-500"
-                  title="Code Synergy Labs — Lahore, Pakistan"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+            <div id="locations">
+              <h3 className="text-3xl md:text-4xl font-black mb-8">Our Locations</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {site.locations.map((loc, i) => (
+                  <motion.div
+                    key={loc.city}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.06, duration: 0.45 }}
+                  >
+                    <Card className="bg-background border-border overflow-hidden h-full hover:border-primary transition-colors group">
+                      <div className="h-44 w-full bg-muted">
+                        <iframe
+                          src={loc.mapSrc}
+                          className="w-full h-full border-0 grayscale group-hover:grayscale-0 transition-all duration-500"
+                          title={`Map of ${loc.city}`}
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                        />
+                      </div>
+                      <CardContent className="p-6">
+                        <h4 className="text-lg font-bold flex items-start gap-2 mb-2">
+                          <MapPin className="text-primary w-5 h-5 shrink-0 mt-0.5" />
+                          {loc.city}
+                        </h4>
+                        <p className="text-muted-foreground text-sm">{loc.desc}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </div>

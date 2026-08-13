@@ -10,6 +10,7 @@ const navItems = [
   { label: "Expertise", id: "expertise" },
   { label: "Process", id: "process" },
   { label: "Stack", id: "stack" },
+  { label: "Locations", id: "locations" },
   { label: "FAQ", id: "faq" },
   { label: "Contact", id: "contact" },
 ];
@@ -78,6 +79,12 @@ export function Layout({ children, onHomeSection }: LayoutProps) {
               >
                 Work
               </Link>
+              <Link
+                href="/team"
+                className="text-sm font-medium text-primary border border-primary/40 hover:bg-primary/10 transition-colors px-4 py-1.5 rounded-full"
+              >
+                Team
+              </Link>
               <Button
                 onClick={() => goToSection("contact")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-full px-6"
@@ -110,6 +117,9 @@ export function Layout({ children, onHomeSection }: LayoutProps) {
               <Link href="/work" className="text-left text-lg font-medium text-primary" onClick={() => setMobileMenuOpen(false)}>
                 Work →
               </Link>
+              <Link href="/team" className="text-left text-lg font-medium text-primary" onClick={() => setMobileMenuOpen(false)}>
+                Team →
+              </Link>
               <Button onClick={() => goToSection("contact")} className="bg-primary text-primary-foreground w-full font-bold">
                 Start a Project
               </Button>
@@ -130,7 +140,7 @@ export function Layout({ children, onHomeSection }: LayoutProps) {
               Software development studio for AI systems, ERP platforms, and production-grade products.
             </p>
             <address className="not-italic text-xs text-muted-foreground/70">
-              {site.city} ·{" "}
+              Lahore · Manchester · UAE · Virginia ·{" "}
               <a href={`mailto:${site.email}`} className="hover:text-primary">
                 {site.email}
               </a>
@@ -144,6 +154,9 @@ export function Layout({ children, onHomeSection }: LayoutProps) {
             ))}
             <Link href="/work" className="hover:text-primary">
               Work
+            </Link>
+            <Link href="/team" className="hover:text-primary">
+              Team
             </Link>
           </nav>
         </div>

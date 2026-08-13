@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import Home from "@/pages/home";
 import Work from "@/pages/work";
+import Team from "@/pages/team";
 import NotFound from "@/pages/not-found";
 
 function ScrollToTop() {
@@ -17,6 +18,7 @@ function Routes() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/work" component={Work} />
+      <Route path="/team" component={Team} />
       <Route component={NotFound} />
     </Switch>
   );
