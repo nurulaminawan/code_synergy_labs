@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Layout } from "@/components/layout";
 import { memberInitials, team, type TeamGroup } from "@/data/team";
 
-const filters: Array<"All" | TeamGroup> = ["All", "Leadership", "AI", "Engineering", "Design", "Marketing"];
+const filters: Array<"All" | TeamGroup> = ["All", "Leadership", "Board", "AI", "Engineering", "Design", "Marketing"];
 
 export default function Team() {
   const [filter, setFilter] = useState<(typeof filters)[number]>("All");
