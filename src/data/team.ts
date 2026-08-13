@@ -1,4 +1,4 @@
-export type TeamGroup = "Leadership" | "AI" | "Engineering" | "Design";
+export type TeamGroup = "Leadership" | "AI" | "Engineering" | "Design" | "Marketing";
 
 export interface TeamMember {
   name: string;
@@ -22,7 +22,11 @@ export const team: TeamMember[] = [
   { name: "Usmana Zulfiqar", role: "Backend & Web Technologies", group: "Engineering" },
   { name: "Ayesha Khan", role: "Flutter Developer", group: "Engineering" },
   { name: "Usama Khan", role: "Web Development", group: "Engineering" },
+  { name: "Abdul Haseeb Arshad", role: "Web Development", group: "Engineering" },
+  { name: "Arsalan Khan", role: "Senior Full Stack Web Developer", group: "Engineering" },
   { name: "Zainab Khan", role: "Frontend & Graphics Designer", group: "Design" },
+  { name: "Hamza", role: "Digital Marketing", group: "Marketing" },
+  { name: "Sameer Khan", role: "Digital Marketing", group: "Marketing" },
 ];
 
 export function memberInitials(name: string) {
