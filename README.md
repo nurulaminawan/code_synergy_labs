@@ -2,7 +2,7 @@
 
 Marketing site for [codesynergylabs.com](https://codesynergylabs.com) — AI, ERP, and custom software development.
 
-This is a standalone Vite + React app, separate from the GoMach project. It deploys to GitHub Pages with the custom domain `codesynergylabs.com`.
+This is a standalone Vite + React app, separate from the GoMach project. It deploys to GitHub Pages at `https://nurulaminawan.github.io/code_synergy_labs/`.
 
 ## Local development
 
@@ -20,12 +20,13 @@ npm run preview
 
 ## GitHub Pages
 
-1. Create a GitHub repository and push this folder as `main`.
-2. In the repo: **Settings → Pages → Source: GitHub Actions**.
-3. Point the domain `codesynergylabs.com` (and `www`) to GitHub Pages:
-   - `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - or `CNAME` to `<user>.github.io`
-4. Optional contact form: add a [Web3Forms](https://web3forms.com) key as the Actions secret `VITE_WEB3FORMS_KEY` (use `info@codesynergylabs.com`). Without it, the form opens a mailto draft.
+The site is published from GitHub Actions to:
+
+https://nurulaminawan.github.io/code_synergy_labs/
+
+To attach `codesynergylabs.com` later, set Pages custom domain, restore the `CNAME` file, and change `BASE_PATH` in `.github/workflows/deploy.yml` to `/`. Then point DNS at GitHub Pages.
+
+Optional contact form: add a [Web3Forms](https://web3forms.com) key as the Actions secret `VITE_WEB3FORMS_KEY` (use `info@codesynergylabs.com`). Without it, the form opens a mailto draft.
 
 ## Stack
 
